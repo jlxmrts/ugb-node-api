@@ -6,7 +6,7 @@ const Hero = sequelize.define("Hero", {
     id: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
-        primarykey: true
+        primaryKey: true
     },
     name: {
         type: DataTypes.STRING,
