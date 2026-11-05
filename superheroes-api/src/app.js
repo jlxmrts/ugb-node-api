@@ -2,6 +2,7 @@ const express = require("express");
 const sequelize = require("./database/database.js");
 
 const app = express();
+app.use(express.json());
 
 const Hero = require("./models/Hero.js");
 const Movie = require("./models/Movie.js");
