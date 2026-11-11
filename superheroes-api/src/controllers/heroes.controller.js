@@ -72,5 +72,6 @@ module.exports = {
     list,
     create,
     update,
+    patch,
     deleteHero
 };
