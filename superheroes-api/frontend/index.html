@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superheroes API
+    </title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-slate-950 text-white min-h-screen p-8">
+    <main class="max-w-3x1 mx-auto">
+
+        <h1 class="text-3x1 font-bold text-purple-500 mb-8">Superheroes API</h1>
+
+        <section class="bg-slate-900 p-6 rounded-x1 mb-8">
+            <h2class="text-xl font-bold mb-4">Cadastrar herói</h2>
+
+            <form id="heroForm" class="flex flex-col gap-4">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Nome do herói"
+                    class="p-3 rounded bg-slate-800"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="universe"
+                    placeholder="Universo (Marvel, DC...)"
+                    class="p-3 rounded bg-slate-800"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="power"
+                    placeholder="Poder"
+                    class="p-3 rounded bg-slate-800"
+                    required
+                >
+
+                <button
+                    type="submit"
+                    class="bg-purple-600 hover:bg-purple-700 
+                    p-3 rounded font-bold">
+                    Cadastrar herói
+                </button>
+
+            </form>
+        </section>
+
+        <section>
+            <h2 class="text-xl font-bold mb-4">Heróis cadastrados</h2>
+
+            <div id="heroesList" class="flex flex-col gap-4"></div>
+
+        </section>
+
+    </main>
+</body>
+</html>
